@@ -6,15 +6,18 @@ import random
 from random import seed
 from random import randint
 
-COMMENTS = ["I love sig phi", "AWESOME!", "So cool", "xian zai wo you bing qi ling", 
-            "Sig phi is the best", "what fine young men", "wow!", "I love tempo",
-            "Sig phi is awesome", "Tempo is such a cool place to live", "I am a real person!"]
+COMMENTS = ["I love sig phi", "AWESOME!", "So cool", "Nice!", 
+            "Sig phi is the best", "What fine young men", "Wow!", "I love tempo",
+            "Sig phi is awesome", "Tempo is such a cool place to live", "Comment", "Nice", 
+            "Rush sig phi", "I am cone", "A sig phi borther saved my cat from a burning building",
+            "SPD ROCKS", "What a cool fraternity", "I wish i was them", "So handsome", "So cute",
+            "I love SPD", "wowowowowow", "Tempo is awesome", ":)", ":))))))", ":->", "Go sig phi"]
 
 def generateRandomComment(comments):
     return comments[randint(0, len(comments)-1)]
 
 def getRandomTime():
-    randTime = randint(7, 15)
+    randTime = randint(20, 25)
     return randTime
 
 class InstagramBot():
@@ -41,10 +44,10 @@ class InstagramBot():
         self.browser.find_element(By.XPATH, "//div/form").click()
         commentInput = self.browser.find_element(By.XPATH, "//form/textarea")
 
-        # comment = generateRandomComment(COMMENTS)
+        comment = generateRandomComment(COMMENTS)
 
-        lines = open('quotes.txt').read().splitlines()
-        comment = random.choice(lines)
+        # lines = open('quotes.txt').read().splitlines()
+        # comment = random.choice(lines)
 
         time.sleep(1)
 
