@@ -54,9 +54,10 @@ class InstagramBot():
     def goToPage(self, url):
         self.browser.get(url)
 
+username = input("Enter username\n")
+password = input("Enter password\n")
 
-
-bot = InstagramBot('INSERT EMAIL OR USERNAME HERE', 'INSERT PASSWORD HERE')
+bot = InstagramBot(username, password)
 
 bot.signIn()
 bot.goToPage('https://www.instagram.com/p/ClzLaZgvPjs/')
