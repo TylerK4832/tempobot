@@ -9,7 +9,7 @@ from random import randint
 COMMENTS = ["I love sig phi", "AWESOME!", "So cool", "Nice!", 
             "Sig phi is the best", "What fine young men", "Wow!", "I love tempo",
             "Sig phi is awesome", "Tempo is such a cool place to live", "Comment", "Nice", 
-            "Rush sig phi", "I am cone", "A sig phi borther saved my cat from a burning building",
+            "Rush sig phi",
             "SPD ROCKS", "What a cool fraternity", "I wish i was them", "So handsome", "So cute",
             "I love SPD", "wowowowowow", "Tempo is awesome", ":)", ":))))))", ":->", "Go sig phi"]
 
